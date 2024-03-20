@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/img_2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG KÍ"
+        android:textStyle="bold"
+        android:textColor="#333366"
+        android:textAlignment="center"
+        android:textSize="35dp"/>
+
+    <EditText
+        android:id="@+id/edtdkemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên đăng kí"
+        android:textColor="#333366"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/edtdkpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mật khẩu"
+        android:inputType="textPassword"
+        android:textColor="#333366"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/btnaccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng ý"
+            android:layout_marginRight="25dp"/>
+        <Button
+            android:id="@+id/btnnoaccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Huỷ đăng kí"/>
+    </LinearLayout>
+</LinearLayout>
